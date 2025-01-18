@@ -180,5 +180,4 @@ Lena
 Lee
 Mid Florida
 Acme
-BlogScoringEnvironmentFAQAbout UsSupportCareersTerms Of ServicePrivacy Policy3
 ```
