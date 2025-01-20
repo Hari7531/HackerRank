@@ -1,8 +1,8 @@
-## 19 - Weather Observation Station 14
+## 20 - Weather Observation Station 15
 <br>
 
 ## Problem
-Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to 4 decimal places.
+Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345. Round your answer to 4 decimal places.
 
 ## Input Format
 
@@ -28,9 +28,9 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 
 ```SQL
-/*select round(sum(lat_n),4) from station where lat_n<137.2345;*/
-
-select truncate(max(lat_n),4) from station where lat_n< 137.2345;
+select round(long_w,4) from station
+where lat_n < 137.2345 order by lat_n desc
+limit 1;
 
 ```
 
@@ -39,5 +39,5 @@ select truncate(max(lat_n),4) from station where lat_n< 137.2345;
 **Output**
 
 ```
-137.0193
+117.2465
 ```
