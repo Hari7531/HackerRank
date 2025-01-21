@@ -1,4 +1,4 @@
-## 021 - Weather Observation Station 17
+## 022 - Weather Observation Station 17
 <br>
 
 ## Problem
