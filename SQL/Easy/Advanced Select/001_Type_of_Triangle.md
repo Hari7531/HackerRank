@@ -4,7 +4,9 @@
 
 ## Problem
 Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. Output one of the following statements for each record in the table:
+
 <br>
+
 Equilateral: It's a triangle with  sides of equal length.<br>
 Isosceles: It's a triangle with  sides of equal length.<br>
 Scalene: It's a triangle with  sides of differing lengths.<br>
