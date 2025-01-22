@@ -29,7 +29,7 @@ Each row in the table denotes the lengths of each of a triangle's three sides.
 
 ## Sample Input
 
-|  A | B | c |
+|  A | B | C |
 |---|---|---|
 | 20 | 20 | 23 |
 | 20 | 20   | 20 |
