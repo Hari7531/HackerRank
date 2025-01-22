@@ -14,13 +14,14 @@ The `EMPLOYEES` table is described as follows :
 |  Column | Type |
 |---|---|
 | ID  | Integer |
-| NAME | String  |
+| Name | String  |
 | Salary  | Integer |
 
 
 `Note`: Salary is per month.
 
 `Constraints`
+<br>
 1000 < salary < 100000
 
 
