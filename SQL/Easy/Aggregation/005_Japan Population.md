@@ -1,8 +1,8 @@
-## 003 - Revising Aggregations - Averages
+## 005 - Japan Population
 <br>
 
 ## Problem
-Query the average population of all cities in CITY where District is California.
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 
 
 ## Input Format
@@ -27,8 +27,8 @@ The `CITY` table is described as follows :
 
 
 ```SQL
-select avg(population) from city
-where district = 'California';
+select sum(population) from city
+where countrycode = 'jpn';
 
 ```
 
@@ -37,5 +37,5 @@ where district = 'California';
 **Output**
 
 ```
-113000.6667
+879196
 ```
