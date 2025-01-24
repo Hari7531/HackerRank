@@ -27,7 +27,7 @@ The `COUNTRY ` table is described as follows :
 |---|---|
 | CODE  | VARCHAR2(3)   |
 | NAME | VARCHAR2(44)   |
-| CONTINENT | VARCHAR2(13)  |
+| CONTINENT | VARCHAR2(13) |
 | REGION  | VARCHAR2(25)  |
 | SURFACEAREA | NUMBER |
 | INDEPYEAR | VARCHAR2(5) |
