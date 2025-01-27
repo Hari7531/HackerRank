@@ -1,4 +1,4 @@
-## 10 - Weather Observation Station 5
+## 001 - Weather Observation Station 5
 <br>
 
 ## Problem
@@ -9,7 +9,15 @@ Query the two cities in STATION with the shortest and longest CITY names, as wel
 
 The `STATION` table is described as follows :
 
-![](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
+|  Field | Type |
+|---|---|
+| ID  | NUMBER |
+| CITY | VARCHAR2(21)   |
+| STATE  | VARCHAR2(2)  |
+| LAT_N | NUMBER |
+| LONG_W | NUMBER |
+
+<br>
 
 where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
