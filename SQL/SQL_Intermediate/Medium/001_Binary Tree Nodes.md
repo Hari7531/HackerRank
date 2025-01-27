@@ -38,7 +38,7 @@ The `BST` table is described as follows :
 <br>
 
 `Sample Output`
-
+```
 1 Leaf
 2 Inner
 3 Leaf
@@ -46,6 +46,8 @@ The `BST` table is described as follows :
 6 Leaf
 8 Inner
 9 Leaf
+
+```
 <br>
 
 ---
@@ -65,8 +67,9 @@ END AS BST_TYPE
 FROM BST B
 ORDER BY N;
 ```
-```SQL
 <br>
+
+```SQL
 `Method-2`
 
 SELECT N,
