@@ -1,4 +1,4 @@
-## 12 - Weather Observation Station 7
+## 011 - Weather Observation Station 7
 <br>
 
 ## Problem

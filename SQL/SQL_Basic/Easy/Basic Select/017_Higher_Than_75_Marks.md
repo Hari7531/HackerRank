@@ -1,5 +1,5 @@
 
-## 023 - Higher Than 75 Marks
+## 017 - Higher Than 75 Marks
 <br>
 
 ## Problem
