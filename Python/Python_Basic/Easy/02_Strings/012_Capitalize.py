@@ -28,6 +28,11 @@ Sample Input
 Sample Output
 1 W 2 R 3g
 """
+import math
+import os
+import random
+import re
+import sys
 def solve(s):
     for i in s.split():
         s = s.replace(i,i.capitalize())
