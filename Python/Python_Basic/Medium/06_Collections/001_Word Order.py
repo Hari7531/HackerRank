@@ -1,5 +1,4 @@
-"001"
-" - Word Order"
+"001- Word Order"
 
 """
 Problem Statement
