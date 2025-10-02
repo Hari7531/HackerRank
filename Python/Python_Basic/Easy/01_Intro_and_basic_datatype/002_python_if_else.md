@@ -49,6 +49,8 @@ def weirdo(num):
             return "Weird"
         elif num > 20:
             return "Not Weird"
+        # else:
+			#return "Not Weird"
 
 
 if __name__ == '__main__':
