@@ -34,3 +34,8 @@ arr = numpy.array(list(map(int, input().split())))
 arr.shape = (3, 3)
 
 print(arr)
+
+# Method-2
+arr = numpy.array(input().split(), int)   # convert input to integers
+arr = arr.reshape(3, 3)                # reshape into 3x3
+print(arr)
