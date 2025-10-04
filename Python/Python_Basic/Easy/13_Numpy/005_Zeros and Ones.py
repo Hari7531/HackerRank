@@ -49,7 +49,10 @@ Sample Output 0
 """
 import numpy
 
-shape = list(map(int, input().split()))
+shape = tuple(map(int, input().split()))
 
 print(numpy.zeros(shape, dtype = numpy.int))
 print(numpy.ones(shape, dtype = numpy.int))
+
+
+
