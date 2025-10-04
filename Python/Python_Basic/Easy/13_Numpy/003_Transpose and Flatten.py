@@ -1,4 +1,4 @@
-"003 - yTranspose and Flatten"
+"003 - Transpose and Flatten"
 
 """
 Problem
