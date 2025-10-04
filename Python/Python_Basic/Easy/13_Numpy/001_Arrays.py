@@ -37,3 +37,8 @@ def arrays(arr):
 arr = input().strip().split(' ')
 result = arrays(arr)
 print(result)
+
+# Method-2
+
+arr = numpy.array(input().split(), float)   # convert to float
+print(arr[::-1])                         # reverse array
