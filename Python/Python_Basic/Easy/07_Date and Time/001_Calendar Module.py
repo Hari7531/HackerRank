@@ -18,6 +18,20 @@ Sample Input
 Sample Output
 WEDNESDAY
 """
+# Method-1
 import calendar
 m,d,y = map(int,input().split())
 print(calendar.day_name[calendar.weekday(y, m, d)].upper())
+
+# Method -2
+
+
+import datetime
+
+def find_day(month, day, year):
+    date = datetime.date(year, month, day)
+    return date.strftime("%A").upper()
+
+# Input format: month day year
+m, d, y = map(int, input().split())
+print(find_day(m, d, y))
