@@ -28,7 +28,7 @@ Sample Output 0
  [ 0.  1.  0.]
  [ 0.  0.  1.]]
 """
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Method-1
 import numpy
 
 n, m = map(int, input().split())
@@ -36,4 +36,12 @@ n, m = map(int, input().split())
 # to fix the ouput format
 numpy.set_printoptions(sign=' ')
 
+print(numpy.eye(n, m))
+
+# Method-2
+
+# Take input
+n, m = map(int, input().split())
+
+# Create the array
 print(numpy.eye(n, m))
