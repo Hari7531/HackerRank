@@ -35,7 +35,7 @@ import numpy as np
 
 a = list(map(float, input().split()))
 
-# to fix the ouput format
+# to fix the ouput format,Always reserve a space for positive numbers instead of showing a + or nothing
 np.set_printoptions(sign=' ')
 
 print(np.floor(a))
