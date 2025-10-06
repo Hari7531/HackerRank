@@ -8,11 +8,12 @@ Task
 
 You are given two integer arrays, A and B of dimensions N X M. Your task is to perform the following operations:
 
-Add (A + B) Subtract (A - B) Multiply (A * B) Integer Division (A / B) Mod (A % B) Power (A ** B)
+Add (A + B) Subtract (A - B) Multiply (A * B) Integer Division (A // B) Mod (A % B) Power (A ** B)
 
 Input Format
 
-The first line contains two space separated integers, N and M. The next N lines contains M space separated integers of array A. The following N lines contains M space separated integers of array B.
+The first line contains two space separated integers, N and M. The next N lines contains M space separated integers of 
+array A. The following N lines contains M space separated integers of array B.
 
 Output Format
 
@@ -34,12 +35,12 @@ Sample Output 0
 """
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-import numpy
+import numpy as np
 
 n, m = map(int, input().split())
 
-a = numpy.array([list(map(int, input().split())) for _ in range(n)])
-b = numpy.array([list(map(int, input().split())) for _ in range(n)])
+a = np.array([list(map(int, input().split())) for _ in range(n)])
+b = np.array([list(map(int, input().split())) for _ in range(n)])
 
 print(a + b)
 print(a - b)
@@ -47,3 +48,18 @@ print(a * b)
 print(a // b)
 print(a % b)
 print(a ** b)
+
+# Method -2
+import numpy as np
+
+n, m = map(int, input().split())
+
+a = np.array([list(map(int, input().split())) for _ in range(n)])
+b = np.array([list(map(int, input().split())) for _ in range(n)])
+
+print(np.add(a, b)) 
+print(np.subtract(a, b))
+print (np.multiply(a, b))
+print (np.divide(a, b))
+print(np.mod(a, b))
+print(np.power(a, b))
