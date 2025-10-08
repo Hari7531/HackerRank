@@ -25,6 +25,7 @@ Output Format
 Output is taken care of by the template. Your function must return a boolean value (True/False)
 
 """
+# Method-1
 def is_leap(year):
     leap = False
     
@@ -40,3 +41,26 @@ def is_leap(year):
     
 year = int(input())
 print(is_leap(year))
+
+# Method-2
+
+# Program to check if a year is a leap year
+
+year = int(input("Enter a year: "))
+
+# Leap year condition
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+# Method-3
+
+def is_leap(year):
+    leap = False
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        leap = True
+    else:
+        leap = False
+    return leap
+    
