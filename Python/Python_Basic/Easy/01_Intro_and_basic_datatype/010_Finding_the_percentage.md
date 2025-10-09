@@ -110,4 +110,28 @@ if __name__ == '__main__':
     sum_marks = reduce(lambda x, y: x + y, marks, 0)
     avg_marks = sum_marks/len(marks)
     print("{:.2f}".format(avg_marks))
+
+```
+### Method 3
+# Read number of students
+N = int(input())
+
+# Initialize dictionary
+records = {}
+
+# Read name and marks for each student
+for _ in range(N):
+    data = input().split()
+    name = data[0]
+    marks = list(map(float, data[1:]))
+    records[name] = marks
+
+# Read the name of the student to query
+query_name = input()
+
+# Compute average marks
+average = sum(records[query_name]) / len(records[query_name])
+
+# Print average correct to 2 decimal places
+print(f"{average:.2f}")
 ```
