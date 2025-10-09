@@ -73,4 +73,37 @@ if __name__ == '__main__':
     seconds = sorted([student[0] for student in nonlowest if student[1] == nonlowest[0][1]])
     for student in seconds:
         print(student)
+
+# Method-2
+
+# Read number of students
+N = int(input())
+
+# Initialize empty list
+students = []
+
+# Read name and score for each student
+for _ in range(N):
+    name = input()
+    score = float(input())
+    students.append([name, score])
+
+# Extract all unique scores
+scores = sorted(set([s[1] for s in students]))
+
+# Find the second lowest score
+second_lowest = scores[1]
+
+# Get names of students with that score
+names = [s[0] for s in students if s[1] == second_lowest]
+
+# Sort names alphabetically
+names.sort()
+
+# Print each name
+for name in names:
+    print(name)
+
 ```
+
+
