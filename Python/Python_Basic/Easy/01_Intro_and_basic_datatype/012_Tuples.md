@@ -50,7 +50,7 @@ if __name__ == '__main__':
 ```python
 if __name__ == '__main__':
     n = int(input())
-    integer_list = map(int, input().split())
+    integer_list = map(int, input().split()) # not a list
     t = tuple(integer_list)
     print(hash(t))
 ```
