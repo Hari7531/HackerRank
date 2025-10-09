@@ -3,7 +3,7 @@
 
 ## Task
 
-Read an integer `N`. For all non-negative integers `i < N`, print **i<sup>2</sup>**. See the sample for details.
+Read an integer `N`. For all non-negative integers `i < N`, print i**2. See the sample for details.
 
 #### Input Format
 

@@ -43,7 +43,7 @@ if __name__ == '__main__':
     n = int(input())
     lst = ""
     for num in range(1, n+1):
-      lst += str(num)
+      lst += str(num) # used str method
     print(lst)
 ```
 ## Method 2
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     n = int(input())
     lst = []
     for num in range(1, n+1):
-      lst.append(str(num))
+      lst.append(str(num))  # used str method
     print("".join(lst))
 ```
 ## Method 3
