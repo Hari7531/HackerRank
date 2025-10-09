@@ -18,7 +18,7 @@ The `CITY` table is described as follows :
 ### Solution
 
 ```SQL
-select * from city where countrycode = "USA" AND POPULATION >= 100000;
+select * from city where countrycode = "USA" AND POPULATION > 100000;
 ```
 
 <br>
