@@ -31,6 +31,24 @@ where employee_id is an employee's ID number, name is their name, months is the 
 select (months*salary) as total_earning,count(*) from employee
 group by total_earning order by total_earning desc limit 1;
 
+# Method-2 cte approach
+
+WITH earnings_cte AS (
+    SELECT 
+        employee_id,
+        name,
+        (months * salary) AS total_earnings,
+        MAX(months * salary) OVER () AS max_earning
+    FROM top_earner
+)
+SELECT 
+    total_earnings,
+    COUNT(*) AS employee_count
+FROM earnings_cte
+WHERE total_earnings = max_earning
+GROUP BY total_earnings;
+
+
 ```
 
 <br>
