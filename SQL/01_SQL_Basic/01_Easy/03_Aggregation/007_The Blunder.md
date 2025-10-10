@@ -35,6 +35,13 @@ The `EMPLOYEES` table is described as follows :
 ```SQL
 select ceil(avg(salary)-avg(replace(salary,'0',''))) from employees;
 
+# even though REPLACE() returned a string, MySQL “auto-converted” it to a number because of the + operation.
+
+Method-2
+
+SELECT CEIL(AVG(SALARY) - AVG(CAST(REPLACE(SALARY, '0', '') AS DECIMAL))) AS error
+FROM EMPLOYEES;
+
 ```
 
 <br>
