@@ -110,6 +110,7 @@ Order your output by **ascending company_code**.
 ## 🧮 Sample Output
 
 C1 Monika 1 2 1 2
+<br>
 C2 Samantha 1 1 2 2
 
 
