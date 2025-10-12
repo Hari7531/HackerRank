@@ -79,7 +79,19 @@ SELECT N,
 FROM BST B
 ORDER BY N;
 ```
+```SQL
+`Method-3`
 
+SELECT 
+    N,
+    CASE
+        WHEN P IS NULL THEN 'Root'
+        WHEN N IN (SELECT DISTINCT P FROM BST WHERE P IS NOT NULL) THEN 'Inner'
+        ELSE 'Leaf'
+    END AS NodeType
+FROM BST
+ORDER BY N;
+```
 <br>
 
 **Output**
