@@ -28,8 +28,11 @@ where employee_id is an employee's ID number, name is their name, months is the 
 
 
 ```SQL
-select (months*salary) as total_earning,count(*) from employee
-group by total_earning order by total_earning desc limit 1;
+select (months*salary) as total_earning,count(*) as employee_count
+from employees
+group by total_earning 
+order by total_earning 
+desc limit 1;
 
 # Method-2 cte approach
 
@@ -48,7 +51,13 @@ FROM earnings_cte
 WHERE total_earnings = max_earning
 GROUP BY total_earnings;
 
+# Method -3
 
+select (months * salary) AS total_earning,count(*) as employee_count
+from top_earner
+group by months * salary
+order by total_earning 
+desc limit 1;
 ```
 
 <br>
